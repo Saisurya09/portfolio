@@ -200,6 +200,14 @@ nav.navbar .w {
   padding: clamp(48px, 9vw, 96px) 0 clamp(32px, 6vw, 64px);
 }
 
+.hero-badge-row {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 10px;
+  margin-bottom: 20px;
+}
+
 .pill-badge {
   display: inline-flex;
   align-items: center;
@@ -211,8 +219,44 @@ nav.navbar .w {
   color: var(--acc);
   padding: 6px 14px;
   border-radius: 999px;
-  margin-bottom: 20px;
   border: 1px solid rgba(31, 79, 209, 0.15);
+}
+
+.sound-toggle-btn {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  font-family: "Inter Tight", sans-serif;
+  font-size: 12px;
+  font-weight: 500;
+  padding: 5px 12px;
+  border-radius: 999px;
+  background: var(--card);
+  color: var(--sub);
+  border: 1px solid var(--line);
+  cursor: pointer;
+  transition: var(--transition);
+}
+
+.sound-toggle-btn:hover {
+  color: var(--ink);
+  border-color: var(--acc);
+}
+
+.sound-toggle-btn.sound-active {
+  background: var(--accbg);
+  color: var(--acc);
+  border-color: rgba(31, 79, 209, 0.25);
+}
+
+:root[data-theme="dark"] .sound-toggle-btn.sound-active {
+  border-color: rgba(126, 165, 255, 0.3);
+}
+
+.sound-toggle-icon {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
 }
 
 .pill-dot {
@@ -242,6 +286,21 @@ h1.hero-title {
   position: relative;
   display: inline-block;
   padding-right: 8px;
+  min-height: 1.05em;
+  vertical-align: bottom;
+  cursor: pointer;
+  border-radius: 4px;
+  transition: opacity 0.2s ease;
+}
+
+.typewriter-wrap:focus-visible {
+  outline: 2px solid var(--acc);
+  outline-offset: 4px;
+}
+
+.typewriter-text {
+  display: inline;
+  white-space: pre-wrap;
 }
 
 .typewriter-cursor {
@@ -252,6 +311,11 @@ h1.hero-title {
   width: 3px;
   background: var(--acc);
   animation: blink 0.9s steps(1) infinite;
+}
+
+.typewriter-cursor.is-typing {
+  animation: none;
+  opacity: 1;
 }
 
 @keyframes blink {

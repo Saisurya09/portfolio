@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 # Ambati SaiSurya - React Portfolio
 
 Modern, high-performance portfolio website built with **React.js** and **Vite**, featuring Vanilla CSS design tokens, dynamic dark/light theme switching, interactive project filtering, and Web3Forms contact integration.
@@ -64,3 +65,6 @@ npm run preview
   - Monogram-styled verified certification links (AWS, MongoDB, IBM)
   - One-click copy email button with tooltip state
   - Responsive mobile drawer navigation
+=======
+# portfolio
+>>>>>>> e681f2a2c7a70b3e80fdf7320be8af4f4738d411
