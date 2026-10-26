@@ -98,7 +98,7 @@ export function Hero() {
             </svg>
           </a>
           <a className="btn" href="#contact">
-            Send a message
+            Get in touch
           </a>
         </div>
       </div>
